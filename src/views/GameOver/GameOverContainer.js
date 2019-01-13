@@ -4,10 +4,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 class GameOverContainer extends Component {
+    state = {
+        score: this.props.match.params.score
+    }
 
     render() {
         return (
-            <GameOver score={0} />
+            <GameOver score={this.state.score} />
         );
     }
 }

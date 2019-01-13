@@ -64,7 +64,7 @@ class CategoryContainer extends Component {
                 this.setState({
                   fail: this.state.fail + 1,
                 })
-                if (this.state.fail === 30) {
+                if (this.state.fail === 3) {
                     console.log("Game Over");
                     localStorage.setItem("score", "0");
                     this.setState({

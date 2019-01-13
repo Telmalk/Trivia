@@ -17,7 +17,7 @@ class App extends Component {
           <Fragment>
             <Route exact path="/" component={HomeContainer} />
             <Route path="/categories/:id" component={CategoryContainer} />
-            <Route path="/gameover" component={GameOverContainer} />
+            <Route path="/gameover/:score" component={GameOverContainer} />
             <Route path="/win" component={WinContainer} />
           </Fragment>
         </Router>
