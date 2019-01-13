@@ -4,6 +4,7 @@ import './App.css';
 import '../../styles/home.css';
 import '../../styles/reset.css';
 import '../../styles/category.css';
+import '../../styles/gameOver.css';
 import HomeContainer from '../../views/Home/HomeContainer';
 import CategoryContainer from '../../views/Category/CategoryContainer';
 import GameOverContainer from '../../views/GameOver/GameOverContainer';
