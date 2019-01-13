@@ -1,0 +1,48 @@
+.questionContainer {
+
+}
+
+.App {
+    height: 100vh;
+}
+.scoreContainer {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    border: 6px black solid;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+}
+
+.formContainer {
+    padding-top: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.categoryChoose {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.question__title {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.question__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.backHomeContainer {
+    text-align: center;
+}

@@ -6,6 +6,7 @@ class HomeContainer extends Component {
   state = {
     categories: [],
     alreadyPlayed: [],
+    score: 0,
   }
 
   async componentDidMount() {
@@ -21,6 +22,9 @@ class HomeContainer extends Component {
         for (let i  = 0; i < this.state.categories.length; i++) {
           if (JSON.parse(localStorage.getItem(this.state.categories[i].id) != null)) {
                 idTab.push(JSON.parse(localStorage.getItem(this.state.categories[i].id)));
+                this.setState({
+                  score: this.state.score + 1
+                })
              }
         }
         this.setState({
@@ -30,7 +34,7 @@ class HomeContainer extends Component {
 
   render() {
     return (
-      <Home categories={this.state.categories} alreadyPlayed={this.state.alreadyPlayed} />
+      <Home categories={this.state.categories} alreadyPlayed={this.state.alreadyPlayed} score={this.state.score} />
     );
   }
 }

@@ -17,7 +17,7 @@ const Home = ({ categories, alreadyPlayed }) => (
                     }
                     if (done) {
                         return (
-                            <Link to={`/categories/${category.id}`} key={category.id}>
+                            <Link className={"toto"} to={`/categories/${category.id}`} key={category.id}>
                                 {category.title}
                             </Link>
                         )

@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Home = ({ categories, alreadyPlayed }) => (
-  <section>
-    <h1>Homepage</h1>
+const Home = ({ categories, alreadyPlayed, score }) => (
+  <section className={'homeContainer'}>
+    <h1 className={'homeTitle'}>Homepage</h1>
+    <h3 className={'explicationText'}>Choisissez une categorie</h3>
+    <h5>Vous avez répondu a toutes les question de  {score} categories</h5>
     {categories.length > 0 && (
-      <section>
+      <section className={'categoriesContainer'}>
         {categories.map(category => {
           let done = false;
             for (let i = 0; i < alreadyPlayed.length; i++) {
@@ -16,9 +18,11 @@ const Home = ({ categories, alreadyPlayed }) => (
             }
             if (!done) {
                 return (
-                    <Link to={`/categories/${category.id}`} key={category.id}>
+                  <div className={'category-linkContainer'}>
+                    <Link className={'categoryLink'} to={`/categories/${category.id}`} key={category.id}>
                         {category.title}
                     </Link>
+                  </div>
                 )
             }})}
       </section>

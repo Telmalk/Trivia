@@ -1,0 +1,42 @@
+.homeTitle {
+    padding-top: 50px;
+    font-size: 2.4em;
+}
+
+.explicationText {
+    margin-top: 25px;
+    font-size: 1.4em;
+}
+
+.categoriesContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.category-linkContainer {
+    margin-top: 25px;
+    width: 25%;
+    background: #D8D8D8;
+    margin-left: 15px;
+    height: 50px;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.categoryLink {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    text-decoration: none;
+    color: black;
+    transform: translateY(-50%);
+}
+
+.categoryLink:hover{
+    color: blue;
+}
+
